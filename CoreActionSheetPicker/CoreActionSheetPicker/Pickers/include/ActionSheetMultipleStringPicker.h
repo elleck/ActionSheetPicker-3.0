@@ -28,11 +28,11 @@
 //SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-//#if COCOAPODS
+#if COCOAPODS
 #import <AbstractActionSheetPicker.h>
-//#else
-//#import <CoreActionSheetPicker/AbstractActionSheetPicker.h>
-//#endif
+#else
+#import "AbstractActionSheetPicker.h"
+#endif
 
 @class ActionSheetMultipleStringPicker;
 typedef void(^ActionMultipleStringDoneBlock)(ActionSheetMultipleStringPicker *picker, NSArray *selectedIndexes, id selectedValues);
